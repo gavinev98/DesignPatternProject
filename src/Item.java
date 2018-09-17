@@ -1,4 +1,9 @@
-public interface Item {
+import java.util.ArrayList;
 
-    public void update(double bid, String user, String note);
+public class Item {
+
+    //List of Observers. They will get update when item updates.
+    private Arraylist<Observer> obs = new ArrayList<Observer>();
+
+
 }
